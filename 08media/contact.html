@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hayden Engemann">
+    <meta name="description" content="Learn about the Cosmere">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cosmere.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Cosmere is Cool: Meet the Author</title>
+</head>
+
+<body>
+    <!-- start the page head -->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100" height="95">
+        <div>
+        <span>Cosmere is Cool</span>
+    </div>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Meet the Author</a></li>
+            <li><a href="roshar.html">Roshar</a></li>
+            <li><a href="radiants.html">Radiant Orders</a></li>
+            <li><a href="scadrial.html">Scadrial</a></li>
+            <li><a href="nalthis.html">Nalthis</a></li>
+            <li><a href="sel.html">Sel</a></li>
+            <li><a href="taldain.html">Taldain</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+    <!-- start the main content -->
+
+    <main>
+        <h1>Contact Us</h1>
+ <h2>Stay Informed About Upcoming Releases</h2>
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required></label>
+                <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+
+
+            <fieldset>
+                <Legend>How should we contact you?</Legend>
+                <label><input type="radio" name="method" value="email">Send to my email</label>
+                <label><input type="radio" name="method" value="phone">Text me</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which series are you interested in?</legend>
+                <label><input type="checkbox" name="stormlight" value="chosen"> Stormlight Archive</label>
+                <label><input type="checkbox" name="mistborn" value="chosen"> Mistborn</label>
+                <label><input type="checkbox" name="elantris" value="chosen"> Elantris</label>
+                <label><input type="checkbox" name="warbreaker" value="chosen"> Warbreaker</label>
+
+                <label>Where do you prefer to read?
+                    <select name="method">
+                        <option value="none">Please Select</option>
+                        <option value="physical">Physical book</option>
+                        <option value="ereader">eReader Device</option>
+                        <option value="audio">Audiobook</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+
+            </label>
+
+
+
+            <input type="submit" value="Stay Informed">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 &bull; Hayden Engemann &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
