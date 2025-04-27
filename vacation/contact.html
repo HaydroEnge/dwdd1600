@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura Trails - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Sakura Trails</h1>
+    <p>Discover the soul of Kyoto, one journey at a time</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li class="active"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Contact Us</h2>
+
+    <form method="get" class="myForm" action="thankyou.html">
+      <fieldset>
+        <legend>Your Information</legend>
+
+        <label for="name">Full Name*</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address*</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number*</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Trip Details</legend>
+
+        <label for="trip">Type of Trip</label><br>
+        <select id="trip" name="trip">
+          <option value="cultural">Cultural Exploration</option>
+          <option value="romantic">Romantic Getaway</option>
+          <option value="family">Family Adventure</option>
+        </select><br><br>
+
+        <label>Preferred Contact Method</label><br>
+        <input type="radio" id="email_contact" name="contact_method" value="email" required>
+        <label for="email_contact">Email</label><br>
+
+        <input type="radio" id="phone_contact" name="contact_method" value="phone" required>
+        <label for="phone_contact">Phone</label><br>
+
+        <input type="radio" id="text_contact" name="contact_method" value="text" required>
+        <label for="text_contact">Text Message</label><br><br>
+
+        <label>Comments or Questions
+            <textarea name="comments"></textarea>
+
+        </label>
+      </fieldset>
+
+      <button type="submit" class="styled-button">Send Inquiry</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sakura Trails Travel Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>
